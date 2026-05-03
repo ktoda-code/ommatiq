@@ -5,6 +5,8 @@ const createWindow = (): void => {
   const window = new BrowserWindow({
     width: 1200,
     height: 800,
+    minWidth: 900,
+    minHeight: 600,
     webPreferences: {
       preload: join(__dirname, "../preload/index.js")
     }
